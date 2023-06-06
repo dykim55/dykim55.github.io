@@ -60,7 +60,6 @@
       searchResults.empty(); // 기존 검색 결과 지우기
 
       var resultItem = $('<p>').text('Search results for: ' + keyword);
-      resultItem += $('<p>').text(foundItem.contents);
       searchResults.append(resultItem);
     }
 
