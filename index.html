@@ -61,8 +61,8 @@
       var resultItem = $('<p>').text('Search results for: ' + keyword);
       searchResults.append(resultItem);
       
-      resultItem = $('<p>').text(foundItem.content);
-      searchResults.append(resultItem);
+      resultItem = $('<div class="card-body">').text(foundItem.content);
+      searchResults.append($('<div class="card">').append(resultItem));
     }
 
     // 검색 폼 제출 이벤트 핸들러 등록
